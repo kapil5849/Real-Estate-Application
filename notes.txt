@@ -1,0 +1,3 @@
+node api/index.js  => to start the server
+
+connected to the database and server is running on port 3001
