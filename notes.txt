@@ -3,3 +3,4 @@ node api/index.js  => to start the server
 connected to the database and server is running on port 3001
 create user model 
 create a test route api/ user 
+create a middleware and a function to handle possible error
