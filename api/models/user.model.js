@@ -14,6 +14,10 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    avatar:{
+        type: String,
+        default: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
+    },
 },{timestamps: true});  // timestamps will automatically add the created_at and updated_at fields to the schema.
 const User = mongoose.model('User', userSchema);
 export default User;  // This is the model that we will use to interact with the database.
