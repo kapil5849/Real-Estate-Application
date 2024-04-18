@@ -115,7 +115,24 @@ export default function Home() {
     } catch (error) {
       setShowListingsError(true);
     }
-  }
+  };
+  const handleListingDelete = async (listingId) => {
+    try {
+      const res = await fetch(`/api/listing/delete/${listingId}`, {
+        method: 'DELETE',
+      });
+      const data = await res.json();
+      if (data.success === false) {
+        console.log(data.message);
+        return;
+      }
+      setUserListings((prev) =>
+        prev.filter((listing) => listing._id !== listingId)
+      );
+    } catch (error) {
+      next(error);
+    }
+  };
 
   return (
     <div className='p-3 max-w-lg mx-auto'>
@@ -157,7 +174,7 @@ export default function Home() {
       <p className='text-green-700 mt-5'>{updateSuccess ? 'Profile updated successfully!' : ''}</p>
       <button onClick={handleShowListings} className='text-green-700 w-full'>Show Listings</button>
       <p className='text-red-700 mt-5'>{showListingError ? 'Error showing listings' : ''}</p>
-      
+
       {userListings && userListings.length > 0 && (
         <div className='flex flex-col gap-4'>
           <h1 className='text-center mt-7 text-2xl font-semibold'>
