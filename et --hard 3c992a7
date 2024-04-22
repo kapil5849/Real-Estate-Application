@@ -1,0 +1,48 @@
+[33m616d90a[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m update build file
+[33m6e0b0f1[m make change
+[33m93ffd4f[m pcode
+[33mb534bf7[m change path of gitignore file
+[33m3e8b61a[m move package json file
+[33m3c992a7[m add pre installation
+[33mc6b3ada[m complete home and about page
+[33m0990d87[m add show more listings functionality
+[33mcc9cfcb[m create the listing item component and show listings
+[33md76c820[m add onchange and onsubmit functionality to the search page
+[33m2e53aff[m create search page ui
+[33m73d192b[m complete header search form functionality
+[33m259c6b2[m create search api route
+[33m0fc1192[m add contact landlord functionality to the listing page
+[33mde4a362[m add contact landlord functionality to the listing page
+[33m81aeeeb[m complete listing page
+[33m503bd41[m add image slider to the listing page
+[33mc9ac37c[m complete update listing functionality
+[33m695773e[m create update listing api route
+[33mb7dcd64[m complete delete user listing functionality
+[33m6e6dab4[m complete show user listings functionality
+[33maf17a2d[m create get user listings api route
+[33mbea8aea[m complete create listing page functionality
+[33m9a06ff8[m complete upload listing images functionality
+[33mfcf9201[m complete create listing page ui
+[33m86ae064[m add create listing api route
+[33m33b9478[m add signout user functionality
+[33m103b5e9[m add delete user functionality
+[33m4e4dbc6[m complete update user functionality
+[33mbebdfee[m create update user api route
+[33m54592e2[m complete user upload functionality
+[33m085ce38[m complete profile page ui
+[33mffb5165[m update the header and make profile page private
+[33mbe64e4a[m create and add Oauth component
+[33m7ec7861[m add redux persist
+[33mb6eb899[m add redux tool
+[33mfb971ca[m completed sign in page functionality
+[33m7b6dd01[m createsign in api route
+[33m85547fc[m complete sign-up page functionality
+[33m54224af[m complete sign up ui code
+[33m42622bf[m create a middleware and a fucntion to handle possible errors
+[33mf701330[m create signup api route
+[33m6c0f1c0[m create a test api route
+[33mc30d43a[m create user model
+[33m263b31d[m connect to database
+[33md2c6e57[m server run and build
+[33mc17b7bc[m Header section done
+[33mbfbb930[m install react js and tailwind with creating the page and routing
