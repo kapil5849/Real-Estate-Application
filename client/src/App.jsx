@@ -5,35 +5,29 @@ import About from './pages/About';
 import Profile from './pages/Profile';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
-import Header from './components/Header';
-import PrivateRouteComponent from './components/PrivateRouteComponent';
 import CreateListing from './pages/CreateListing';
 import UpdateListing from './pages/UpdateListing';
 import Listing from './pages/Listing';
 import Search from './pages/Search';
-import Footer from './components/Footer';
+import Layout from './components/Layout';
+import PrivateRouteComponent from './components/PrivateRouteComponent';
 
 export default function App() {
   return (
     <BrowserRouter>
-      <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/" element={<Layout><Home /></Layout>} />
+        <Route path="/about" element={<Layout><About /></Layout>} />
         <Route element={<PrivateRouteComponent />} >
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/create-listing" element={<CreateListing />} />
-          <Route
-            path='/update-listing/:listingId'
-            element={<UpdateListing />}
-          />
+          <Route path="/profile" element={<Layout><Profile /></Layout>} />
+          <Route path="/create-listing" element={<Layout><CreateListing /></Layout>} />
+          <Route path='/update-listing/:listingId' element={<Layout><UpdateListing /></Layout>} />
         </Route>
-        <Route path="/sign-in" element={<SignIn />} />
-        <Route path="/sign-up" element={<SignUp />} />
-        <Route path="/listing/:listingId" element={<Listing />} />
-        <Route path="/search" element={<Search />} />
+        <Route path="/sign-in" element={<Layout><SignIn /></Layout>} />
+        <Route path="/sign-up" element={<Layout><SignUp /></Layout>} />
+        <Route path="/listing/:listingId" element={<Layout><Listing /></Layout>} />
+        <Route path="/search" element={<Layout><Search /></Layout>} />
       </Routes>
-      <Footer/>
     </BrowserRouter>
   );
 }
